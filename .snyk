@@ -1,0 +1,25 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - strike-api > superagent > extend:
+        patched: '2019-04-03T04:01:42.887Z'
+  'npm:mime:20170907':
+    - read-torrent > request > mime:
+        patched: '2019-04-03T04:01:42.887Z'
+    - read-torrent > request > form-data > mime:
+        patched: '2019-04-03T04:01:42.887Z'
+    - torrent-tracker-health-ce > read-torrent > request > mime:
+        patched: '2019-04-03T04:01:42.887Z'
+    - torrent-tracker-health-ce > read-torrent > request > form-data > mime:
+        patched: '2019-04-03T04:01:42.887Z'
+    - strike-api > superagent > mime:
+        patched: '2019-04-03T04:01:42.887Z'
+  'npm:qs:20140806-1':
+    - torrent-tracker-health-ce > read-torrent > request > qs:
+        patched: '2019-04-03T04:01:42.887Z'
+  'npm:request:20160119':
+    - torrent-tracker-health-ce > read-torrent > request:
+        patched: '2019-04-03T04:01:42.887Z'
